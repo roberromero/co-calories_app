@@ -1,0 +1,121 @@
+/*Meal Favourites*/
+
+.card-recepi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    cursor: pointer;
+    height: 150px;
+    border-radius: 6px;
+    width: 325px;
+    border: 2px solid transparent;
+  }
+  
+  .card-recepi:hover{
+    border: 2px solid;
+  }
+  .card-recepi__title{
+    font-weight: bold;
+    max-width: 280px;
+    margin-bottom: 15px;
+  }
+  .card-recepi__container-spans{
+    display: flex;
+  }
+  .card-recepi__info{
+    font-size: .8rem;
+    padding-left: 13px;
+  }
+  .card-recepi__info:first-child{
+    padding-left: 0;
+  }
+  .card-recepi a{
+    color: var(--grey-color);
+    opacity: 0;
+    text-align: center;
+    padding: 3px;
+    margin-top: 10px;
+    background-color: #ce926c;
+    color: var(--grey-color);
+    border-radius: 6px;
+  }
+  .card-recepi a:hover{
+    opacity: 1;
+  }
+  .card-recepi__img{
+    display: none;
+  }
+  
+  .favourites__img-container{
+    position: relative;
+    width: 100%;
+  }
+  .favourites__img-container img{
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    width: 950px;
+  }
+
+  @media only screen and (max-width: 1838px) {
+    .favourites__chevron{
+      display: none;
+    }
+    .card-recepi{
+      margin: 5px;
+      color: #1e1d1d;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: auto;
+      align-items: flex-start;
+    }
+    .card-recepi__title{
+      height: 50px;
+    }
+    .card-recepi a{
+      font-weight: bold;
+      font-size: .8rem;
+      align-self: center;
+      opacity: 1;
+      padding: 3px 45px;
+      color: #1e1d1d;
+      background-color: transparent;
+      border: 2px solid black;
+      padding: 25px 45px;
+      border-radius: 0;
+    }
+    .card-recepi a:hover{
+      background-color: #ce926c;
+      color: #fff;
+    }
+    .card-recepi__img{
+      display: block;
+      margin-top: 15px;
+      width: 100%;
+    }
+    .card-recepi__img img{
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 635px){
+    .card-recepi:hover{
+      border: 2px solid transparent;
+    }
+      .card-recepi__title{
+        font-size: .8rem;
+        height: 0;
+        padding-bottom: 25px;
+    }
+    .card-recepi__container-spans p{
+      font-size: .6rem;
+    }
+    .card-recepi a{
+      font-weight: 400;
+      font-size: .6rem;
+      padding: 12px 15px;
+    }
+  }
+  

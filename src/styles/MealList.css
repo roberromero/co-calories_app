@@ -1,0 +1,42 @@
+/*NUTRIENTS SECTION*/
+.main{
+    width: 100%;
+  }
+  
+  .nutrients{
+    text-align: center;
+    padding-top: 15px;
+  }  
+  .nutrients__title{
+    font-size: 2rem;
+    color: #b25a22;
+    padding-bottom: 35px;
+  }
+  .nutrients__list{
+    display: flex;
+    justify-content: center;
+  }
+  .nutrients__list li{
+    font-size: 1.5rem;
+    padding-left: 25px;
+  }
+
+  @media only screen and (max-width:635px){
+    .nutrients__title{
+      font-size: 1.5rem;
+    }
+    .nutrients__list li {
+      font-size: .9rem;
+    }
+    .meal-cards__container-img {
+      width: auto;
+    }
+    .nutrients__list li{
+      font-size: .8rem;
+    }
+    .nutrients__list li:first-child{
+      padding-left: 0;
+    }
+    
+  }
+  

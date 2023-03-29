@@ -1,0 +1,42 @@
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+  }
+  .footer__container-icons{
+    display: flex;
+  }
+  .footer__container-icons a{
+    color: var(--bronze-color);
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: 8px;
+  }
+  .footer__container-icons a:hover{
+    background-color: var(--main-color);
+    color: var(--bronze-color);
+    opacity: .6;
+  }
+  .footer__container-icons a svg{
+    width: 30px;
+    height: 30px;
+  }
+
+  @media only screen and (max-width: 635px){
+    .footer{
+      flex-direction: column;
+      margin-top: 15px;
+    }
+    .footer p{
+      padding-top: 15px;
+    }
+  }
